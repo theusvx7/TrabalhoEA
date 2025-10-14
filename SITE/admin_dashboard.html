@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconecte-se - Dashboard Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desconecte-se.</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="ajuda.html">Preciso de Ajuda</a>
+            <a href="admin.html" style="font-weight: bold;">Admin (Sair)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Dashboard Administrativo - Mensagens Pendentes</h2>
+        
+        <div class="mensagem-admin">
+            <h3>Mensagem Pendente #001</h3>
+            <p><strong>Nome:</strong> Usuário Anônimo</p>
+            <p><strong>E-mail de Contato:</strong> usuario.exemplo@email.com</p>
+            <p><strong>Assunto:</strong> Dificuldade em parar/vício</p>
+            <p><strong>Mensagem:</strong> "Não consigo passar mais de 10 minutos sem checar meu celular, até mesmo no trabalho. Isso está me causando ansiedade e problemas de concentração. Por favor, ajude-me!"</p>
+            
+            <hr>
+            <h4>Formulário de Resposta:</h4>
+            <form action="/enviar_resposta" method="POST">
+                <input type="hidden" name="id_mensagem" value="001">
+                <input type="email" name="email_destino" value="usuario.exemplo@email.com" readonly>
+                <textarea name="resposta" rows="4" placeholder="Escreva sua resposta e orientação..."></textarea>
+                <button type="submit">Enviar Resposta por E-mail</button>
+            </form>
+            <button class="marcar-lida">Marcar como Lida</button>
+        </div>
+
+        <div class="mensagem-admin">
+            <h3>Mensagem Pendente #002</h3>
+            <p>Nenhuma mensagem pendente no momento.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Desconecte-se. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

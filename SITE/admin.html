@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconecte-se - Login Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desconecte-se.</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="ajuda.html">Preciso de Ajuda</a>
+            <a href="admin.html">Admin (Reservado)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Área de Acesso do Administrador</h2>
+        <p>Acesso restrito para gerenciamento das mensagens de "Preciso de Ajuda".</p>
+
+        <form action="/login_admin" method="POST" id="form-login">
+            <label for="usuario">Usuário Admin:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button href="index.html" type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Desconecte-se. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

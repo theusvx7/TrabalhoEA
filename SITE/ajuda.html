@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconecte-se - Preciso de Ajuda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desconecte-se.</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="ajuda.html">Preciso de Ajuda</a>
+            <a href="admin.html">Admin (Reservado)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Preciso de Ajuda</h2>
+        <p>Se você ou alguém que você conhece está tendo dificuldades em reduzir o uso do celular ou sofre com ansiedade ao ficar desconectado, preencha o formulário abaixo. Sua mensagem será enviada a um de nossos administradores para contato e orientação.</p>
+
+        <form action="/enviar_mensagem" method="POST" id="form-ajuda">
+            <label for="nome">Seu Nome (ou Pseudônimo):</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Seu Melhor E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Exigido para que possamos te contatar">
+
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione o tipo de ajuda</option>
+                <option value="duvida">Dúvida sobre o uso</option>
+                <option value="vicio">Dificuldade em parar/vício</option>
+                <option value="orientacao">Orientação para terceiros</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem">Sua Mensagem / Dúvida:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Descreva sua dificuldade ou dúvida em detalhes."></textarea>
+
+            <button type="submit">Enviar Pedido de Ajuda</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Desconecte-se. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
